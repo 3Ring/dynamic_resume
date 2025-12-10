@@ -130,6 +130,25 @@
 {% endfor %}
 {% endif %}
 
+%-----------EDUCATION-----------
+{% if resume.education %}
+\section{Education}
+  \resumeSubHeadingListStart
+  {% for edu in resume.education %}
+    \resumeSubheading
+    {/{{ edu.title }}/}
+    {/{{ edu.date }}/}
+    {/{{ edu.institution }}/}
+    {/{{ edu.info }}/}
+    \resumeItemListStart
+      {% for highlight in edu.highlights %}
+        \resumeItem{/{{ highlight }}/}
+        {% endfor %}
+    \resumeItemListEnd
+  {% endfor %}
+  \resumeSubHeadingListEnd
+{% endif %}
+
 %-----------EXPERIENCE-----------
 {% if resume.professional_experience %}
 \section{Experience}
@@ -145,23 +164,13 @@
         \resumeItem{/{{ highlight }}/}
         {% endfor %}
     \resumeItemListEnd
-    {% endfor %}
+  {% endfor %}
   \vspace{10pt}
   \begin{center}
     \large\textbf{Details for previous non-technical and managerial experience is available upon request.}
   \end{center}
   \resumeSubHeadingListEnd
   {% endif %}
-
-%-----------EDUCATION-----------
-{% if resume.education %}
-\section{Education}
-  \resumeItemListStart
-    {% for edu in resume.education %}
-      \resumeItem{/{{ edu }}/}
-    {% endfor %}
-  \resumeItemListEnd
-{% endif %}
 
 %-------------------------------------------
 \end{document}

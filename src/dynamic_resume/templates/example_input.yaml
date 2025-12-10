@@ -1,0 +1,89 @@
+first_name: John
+middle_name: Danger
+last_name: Doe
+email: johndoe@example.com
+phone: "+1 (402) 555-1234"
+location: Omaha, NE
+linkedin_profile: www.linkedin.com/in/john-doe
+github_profile: www.github.com/johndoe
+headline: Full Stack Developer Specialiaing in finding ways to get sent to Bel-Air
+summary: >
+  In West Philidelphia born and raised,
+  On the playground was where I spent most of my days.
+  Chillin' out maxin' relaxin' all cool,
+  And all shootin' some b-ball outside of the school,
+  When a couple of guys who were up to no good
+  Started makin' trouble in my neighborhood.
+  I got in one little fight and my mom got scared
+  She said, "You're movin' with your auntie and uncle in Bel-Air."
+alternative_headlines:
+  - "Backend Engineer who likes cheese"
+  - "Frontend Engineer who loves cats"
+  - "DevOps Specialist and amateur meterologist"
+professional_experience:
+  - Acme Corp:
+      title: Man with a pencil
+      company_info: Fictional Company that makes everything
+      dates_employed: 2020-01-01, ongoing
+      highlights:
+        - Designed and implemented a new feature that allows users to draw with pencils on the company website.
+        - Improved the performance of the website by optimizing the pencil drawing algorithm.
+        - Collaborated with the design team to create a more user-friendly pencil drawing interface.
+  - Big Head Software:
+      title: person of interest
+      company_info: Innovative Software Solutions for people with big heads
+      dates_employed: 2018-06-01,2019-12-31
+      highlights:
+        - Developed a custom software solution for people with big heads to help them find hats that fit properly.
+        - Conducted user research to understand the unique needs of people with big heads.
+        - Presented findings and recommendations to the executive team, leading to the successful launch of the product
+  - Scrappy.io:
+      title: Intern
+      company_info: Startup for starting up startups
+      dates_employed: 2017-05-01,2017-08-31
+      highlights:
+        - Collaborated with collaborations to initialized the collaborative collaboration flow.
+        - got coffee
+        - drank coffee
+education:
+  - Bachelor of Rock and Roll:
+      institution: School of Rock
+      info: Music and Life Lessons
+      date: "Class of 2016"
+      highlights:
+        - Awsome Guitar Riffs 101
+        - Awsome Hair 201
+        - Grungy Vocals 99
+        - D.A.R.E.
+  - Certificate of Awesomeness:
+      institution: My cousin's garage
+      info: "A comprehensive program on being awesome"
+      highlights:
+        - Completed a comprehensive program on being awesome in both personal and professional settings.
+        - Developed skills in communication, leadership, and creativity.
+        - Graduated with honors and received recognition for outstanding achievement in awesomeness.
+skills:
+    Languages:
+      - C
+      - C#
+      - C++
+      - C flat
+    Libraries:
+      - .NET
+      - ASP.NET
+      - Entity Framework
+      - Jumanji
+      - React
+      - OverReact
+      - React Native
+      - React Immigrant
+    Other:
+      - AWS
+      - Azure
+      - GCP
+      - Cumulus
+      - Nimbus
+      - Stratus
+      - Cirrus
+      - CirrusXM
+

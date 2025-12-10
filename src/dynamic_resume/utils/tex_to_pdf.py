@@ -5,7 +5,6 @@ import subprocess
 from os import PathLike
 
 
-
 def tex_to_pdf(
     tex_file: str | PathLike,
     output_dir: t.Optional[str | PathLike] = None,
@@ -20,12 +19,7 @@ def tex_to_pdf(
     if not shutil.which("pdflatex"):
         raise EnvironmentError("pdflatex is not installed or not found in PATH")
     subprocess.run(
-        [
-            "pdflatex",
-            "-output-directory",
-            output_dir,
-            tex_file
-        ],
+        ["pdflatex", "-output-directory", output_dir, tex_file],
         check=True,
     )
     if pdf_file_name:

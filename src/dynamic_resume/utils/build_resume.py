@@ -1,5 +1,6 @@
 from dynamic_resume.models.resume import Resume
 from dynamic_resume.models.experience import Experience
+from dynamic_resume.models.education import Education
 
 
 def build_resume_from_dict(data: dict) -> Resume:
@@ -20,5 +21,24 @@ def build_resume_from_dict(data: dict) -> Resume:
                     alternatives=v.get("alternatives", None),
                 )
             )
+    education = []
+    for edu in data.get("education", []):
+        if not isinstance(edu, dict):
+            raise ValueError(f"Invalid education entry: {edu}")
+        for k, v in edu.items():
+            if not isinstance(v, dict):
+                raise ValueError(f"Invalid education details for {k}: {v}")
+            education.append(
+                Education(
+                    title=k,
+                    institution=v.get("institution", ""),
+                    info=v.get("info", ""),
+                    date=v.get("date", ""),
+                    highlights=v.get("highlights", []),
+                    alternatives=v.get("alternatives", None),
+                )
+            )
+    
     data["professional_experience"] = professional_experience
+    data["education"] = education
     return Resume(**data)

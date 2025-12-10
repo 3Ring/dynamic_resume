@@ -1,6 +1,7 @@
 import typing as t
 from pydantic import BaseModel, Field, computed_field
 from dynamic_resume.models.experience import Experience
+from dynamic_resume.models.education import Education
 
 
 class Resume(BaseModel):
@@ -15,7 +16,7 @@ class Resume(BaseModel):
     github_profile: t.Optional[str] = None
     linkedin_profile: t.Optional[str] = None
     website: t.Optional[str] = None
-    education: t.Optional[list[str]] = None
+    education: t.Optional[list[Education]] = None
     professional_experience: t.Optional[list[Experience]] = None
     skills: t.Optional[dict[str, list]] = None
     alternatives: t.Optional[dict[str, str]] = (
